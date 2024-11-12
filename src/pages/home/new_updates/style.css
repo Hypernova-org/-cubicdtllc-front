@@ -1,0 +1,56 @@
+.update {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+.update h1 {
+    font-size: 60px;
+    color: red;
+}
+.update p {
+    width: 40%;
+    text-align: center;
+    font-size: 30px;
+}
+.update div {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.update div div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+.update div div:nth-child(2) {
+    width: 30%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.update div div h1 {
+    font-size: 30px;
+    width: 90%;
+    color: black;
+}
+.update div div p {
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: -20px;
+}
+.update div div:nth-child(2) p {
+    width: 80%;
+}

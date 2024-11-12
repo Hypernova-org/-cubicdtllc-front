@@ -1,0 +1,100 @@
+.home_contact {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.home_contact .home_contact_h1 {
+    font-size: 60px;
+    color: red;
+}
+.home_contact .home_contact_h1 span {
+    font-weight: 100;
+    color: black;
+}
+.contact_number {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_number div {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.contact_number div p {
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact_number h1 {
+    font-size: 45px;
+    color: red;
+}
+.contact_states1 {
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact_states1 div {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact_states1 div div {
+    width: 40%;
+    height: 50%;
+    background-image: url('../../../assets/images/graph.png');
+    background-size: cover;
+}
+
+.contact_states1 div p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+
+.contact_states2 {
+    width: 90%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+    align-items: center;
+}
+.contact_states2 div {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.contact_states2 div div {
+    width: 40%;
+    height: 50%;
+    background-image: url('../../../assets/images/graph.png');
+    background-size: cover;
+}
+
+.contact_states2 div p {
+    font-size: 25px;
+    font-weight: 500;
+}

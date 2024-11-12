@@ -1,0 +1,67 @@
+.home_gallery {
+    width: 100%;
+    height: 280vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+.gallery_container {
+    width: 100%;
+    height: 33.33%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../assets/images/1.webp');
+    background-size: cover;
+}
+.gallery_container:nth-child(2) {
+    background-image: url('../../../assets/images/2.jpg');
+    background-size: cover;
+} 
+.gallery_container:nth-child(3) {
+    background-image: url('../../../assets/images/3.jpg');
+    background-size: cover;
+} 
+.gallery_container div {
+    width: 25%;
+    height: 40%;    
+    position: relative;
+    right: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+.gallery_container:nth-child(2) div {
+    position: relative;
+    left: 500px;
+} 
+
+.gallery_container div h1 {
+    font-size: 55px;
+    width: 60%;
+    color: white;
+}
+.gallery_container:nth-child(3) div h1 span {
+    font-weight: 100;
+}
+.gallery_container div p {
+    font-size: 20px;
+    color: white;
+}
+.gallery_container div button {
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: .4s;
+}
+.gallery_container div button:hover {
+    background-color: red;
+}
