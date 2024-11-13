@@ -28,38 +28,6 @@ const HomeContact = () => {
             <h1>62,384,610</h1>
           </div>
         </div>
-        <div className='contact_states1'>
-          <div>
-            <div></div>
-            <p>2017 Report</p>
-          </div>
-          <div>
-            <div></div>
-            <p>2018 Report</p>
-          </div>
-          <div>
-            <div></div>
-            <p>2019 Report</p>
-          </div>
-          <div>
-            <div></div>
-            <p>2020 Report</p>
-          </div>
-        </div>
-        <div className='contact_states2'>
-          <div>
-            <div></div>
-            <p>2021 Report</p>
-          </div>
-          <div>
-            <div></div>
-            <p>2022 Report</p>
-          </div>
-          <div>
-            <div></div>
-            <p>2023 Report</p>
-          </div>
-        </div>
     </section>
     </>
   )
