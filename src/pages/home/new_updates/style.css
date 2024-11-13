@@ -54,3 +54,58 @@
 .update div div:nth-child(2) p {
     width: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:375px) and (max-width:992px) {
+    .update {
+        width: 100%;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+    .update h1 {
+        font-size: 30px;
+        color: red;
+        margin-top: 40px;
+    }
+    .update p {
+        width: 90%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .update div {
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .update div div {
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+    .update div div:nth-child(2) {
+        width: 90%;
+        border: none;
+    }
+}

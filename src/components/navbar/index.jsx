@@ -9,37 +9,11 @@ const Navbar = () => {
             <a href=""><img src="" alt="" /></a>
             <nav>
                 <ul>
-                    <li><Link to="/products">Our Company</Link></li>
-                    <li><details class="menu-details">
-                            <summary>Shipping Solutions</summary>
-                            <div className='nav-dropdown'>
-                                <a href="">Katalog</a>
-                                <a href="">Yo'riqnoma</a>
-                                <a href="">Sertifikatlar</a>
-                                <a href="">Broshyular</a>
-                            </div>
-                        </details></li>
-                    <li><Link to="/news">Technology</Link></li>
-                    <li><details class="menu-details">
-                            <summary>Work with Us</summary>
-                            <div className='nav-dropdown'>
-                                <a href="">Katalog</a>
-                                <a href="">Yo'riqnoma</a>
-                                <a href="">Sertifikatlar</a>
-                                <a href="">Broshyular</a>
-                            </div>
-                        </details></li>
-                        <li><details class="menu-details">
-                            <summary>Drivers</summary>
-                            <div className='nav-dropdown'>
-                                <a href="">Katalog</a>
-                                <a href="">Yo'riqnoma</a>
-                                <a href="">Sertifikatlar</a>
-                                <a href="">Broshyular</a>
-                            </div>
-                        </details></li>
-                        <button><a href="">Sign Up</a></button>
-                        <button><a href="">Login</a></button>
+                    <li><a href="#ourcompany">Our Company</a></li>
+                    <li><a href="#suggestions">Suggestions</a></li>
+                    <li><a href="#ourworkflow">Our Workflow</a></li>
+                    <li><a href="#operation">Operation</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div className='burger_menu'>

@@ -12,7 +12,7 @@ header {
 
 }
 header nav {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -103,6 +103,7 @@ header nav ul li:nth-child(5) details summary {
 header nav ul li a {
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
 
 header nav ul li a:hover,
@@ -146,15 +147,14 @@ header nav ul button a {
 @media screen and (min-width: 375px) and (max-width: 992px) {
     header{
         width: 100%;
-        height: 10vh;
+        height: 5vh;
         display: flex;
         justify-content: end;
         align-items: center;
     }
     .burger_menu{
         width: 80px;
-        height: 70%;
-        background-color: red;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -163,10 +163,10 @@ header nav ul button a {
         right: 10px;
     }
     .burger_menu a svg {
-        width: 45px;
-        height: 45px;
+        width: 30px;
+        height: 30px;
         font-weight: 800;
-        color: white;
+        color: red;
     }
     header nav {
         display: none;

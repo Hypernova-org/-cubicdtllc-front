@@ -45,3 +45,39 @@
     width: 40%;
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 992px) {
+    .home_about {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 30px;
+    }
+    .home_about .div div h1 {
+        font-size: 20px;
+    }
+    .home_about .div div p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .home_about .h1 {
+        font-size: 40px;
+    }
+    .home_about .div div {
+    }
+    .div {
+        height: 80%;
+    }
+}

@@ -4,7 +4,7 @@ import '../home_contact/style.css';
 const HomeContact = () => {
   return (
     <>
-    <section className='home_contact'>
+    <section id='operation' className='home_contact'>
         <h1 className='home_contact_h1'><span>Operation</span> Numbers</h1>
         <div className='contact_number'>
           <div>
@@ -49,15 +49,15 @@ const HomeContact = () => {
         <div className='contact_states2'>
           <div>
             <div></div>
-            <p>2018 Report</p>
+            <p>2021 Report</p>
           </div>
           <div>
             <div></div>
-            <p>2019 Report</p>
+            <p>2022 Report</p>
           </div>
           <div>
             <div></div>
-            <p>2020 Report</p>
+            <p>2023 Report</p>
           </div>
         </div>
     </section>

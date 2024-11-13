@@ -4,7 +4,7 @@ import '../home_about/style.css';
 const HomeAbout = () => {
   return (
     <>
-    <main className='home_about'>
+    <main id='suggestions' className='home_about'>
         <h1 className='h1'>What We Offer</h1>
         <div className='div'>
           <div>

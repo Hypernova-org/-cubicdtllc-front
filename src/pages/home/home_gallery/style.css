@@ -8,12 +8,16 @@
 .gallery_container {
     width: 100%;
     height: 33.33%;
-    background-color: blue;
+    background-image: url('../../../assets/images/1.webp');
+    background-size: cover;
+}
+.gallery_container .background {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../../assets/images/1.webp');
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.606);
 }
 .gallery_container:nth-child(2) {
     background-image: url('../../../assets/images/2.jpg');
@@ -23,7 +27,7 @@
     background-image: url('../../../assets/images/3.jpg');
     background-size: cover;
 } 
-.gallery_container div {
+.gallery_container .background div {
     width: 25%;
     height: 40%;    
     position: relative;
@@ -34,12 +38,12 @@
     align-items: start;
     gap: 20px;
 }
-.gallery_container:nth-child(2) div {
+.gallery_container:nth-child(2) .background div {
     position: relative;
     left: 500px;
 } 
 
-.gallery_container div h1 {
+.gallery_container .background div h1 {
     font-size: 55px;
     width: 60%;
     color: white;
@@ -47,11 +51,11 @@
 .gallery_container:nth-child(3) div h1 span {
     font-weight: 100;
 }
-.gallery_container div p {
+.gallery_container .background div p {
     font-size: 20px;
     color: white;
 }
-.gallery_container div button {
+.gallery_container .background div button {
     font-size: 18px;
     padding: 10px 20px 10px 20px;
     border: none;
@@ -64,4 +68,74 @@
 }
 .gallery_container div button:hover {
     background-color: red;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 992px) {
+    .home_gallery {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+    .gallery_container .background div {
+        width: 90%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .gallery_container .background div h1 {
+        font-size: 20px;
+        width: 60%;
+        color: white;
+        text-align: center;
+    }
+    .gallery_container .background div p {
+        font-size: 10px;
+        width: 60%;
+        color: white;
+        text-align: center;
+    }
+    .gallery_container .background {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.606);
+    }
+    .gallery_container:nth-child(3) .background div {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .gallery_container:nth-child(1) .background div {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .gallery_container:nth-child(2) .background div {
+        position: relative;
+        left: 0;
+    }
+    .gallery_container .background div button {
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+        border: 0.5px solid white;
+    }
 }
