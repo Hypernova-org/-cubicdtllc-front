@@ -10,14 +10,14 @@
 .brands h1 {
     width: 90%;
     text-align: start;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 100;
     color: red;
 }
 .brands p {
     text-align: start;
     width: 90%;
-    font-size: 28px;
+    font-size: 24px;
 }
 .brands button  {
     padding: 7px 40px 7px 40px;

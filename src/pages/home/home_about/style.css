@@ -13,7 +13,7 @@
     width: 95%;
     text-align: start;
     margin-left: auto;
-    font-size: 60px;
+    font-size: 50px;
     color: red;
     font-weight: 100;
 }
@@ -37,13 +37,13 @@
 
 .home_about .div div h1 {
     margin: 0;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 
 .home_about .div div p {
     width: 40%;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
