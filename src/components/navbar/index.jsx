@@ -1,31 +1,47 @@
 import React from 'react';
 import '../navbar/style.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from '../../assets/images/truck_logo.png'
 
 const Navbar = () => {
-  return (
-    <>
-        <header>
-            <a href=""><img src="" alt="" /></a>
-            <nav>
-                <ul>
-                    <li><a href="#ourcompany">Our Company</a></li>
-                    <li><a href="#suggestions">Suggestions</a></li>
-                    <li><a href="#ourworkflow">Our Workflow</a></li>
-                    <li><a href="#operation">Operation</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div className='burger_menu'>
-                <a href="">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                    </svg>
-                </a>
-            </div>
-        </header>
-    </>
-  )
-}
+  const navigate = useNavigate();
 
-export default Navbar
+  const handleNavigation = (path, hash) => {
+    navigate(path);
+    setTimeout(() => {
+      const element = document.querySelector(hash);
+      if (element) {
+        const offset = 100;
+        const position = element.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: position, behavior: 'smooth' });
+      }
+    }, 0);
+  };
+
+  return (
+    <header id="navbar">
+      <a href=""><img className='logo' src={Logo} alt="" /></a>
+      <nav>
+        <ul>
+          <li>
+            <a onClick={() => handleNavigation('/', '#ourcompany')}>Our Company</a>
+          </li>
+          <li>
+            <a onClick={() => handleNavigation('/', '#suggestions')}>Suggestions</a>
+          </li>
+          <li>
+            <a onClick={() => handleNavigation('/', '#ourworkflow')}>Our Workflow</a>
+          </li>
+          <li>
+            <a onClick={() => handleNavigation('/', '#operation')}>Operation</a>
+          </li>
+          <li>
+            <a onClick={() => handleNavigation('/', '#contact')}>Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;
