@@ -118,6 +118,7 @@ The Company will retain Your Personal Data only for as long as is necessary for 
         <p>By email: cubitsafety2022@gmail.com</p>
         <p>By visiting this page on our website: http://cubicdtllc.com/#operation</p>
         <p>By phone number: 380.201.7145</p>
+        <p>SMS consent and phone numbers provided for SMS purposes will not be shared with any third parties or affiliates for marketing purposes.</p>
     </div>
     </>
   )
