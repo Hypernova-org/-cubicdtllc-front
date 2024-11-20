@@ -1,7 +1,7 @@
 import React from 'react';
 import '../navbar/style.css';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../../assets/images/truck_logo.png'
+import Logo from '../../assets/images/logo1.png'
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <header id="navbar">
-      <a href=""><img className='logo' src={Logo} alt="" /></a>
+      <Link to={"/"}><img className='logo' src={Logo} alt="" /></Link>
       <nav>
         <ul>
           <li>
