@@ -11,7 +11,7 @@ const Footer = () => {
             <p>Copyright © 2024 CUBICDT LLC</p>
             <Link to={'/documents#first'} >Privacy Policy</Link>
             <div>
-              <p>Site crafted by Robintek:</p>
+              <p>Site crafted by Hypernova:</p>
               <a href="https://hypernova.uz/">
                 <img src={Logo} alt="" />
               </a>
