@@ -7,16 +7,11 @@ const Documents = () => {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        // Get the position of the element relative to the top of the document
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        
-        // Offset for the navbar or desired spacing (100px in this case)
         const offset = 100; 
-        
-        // Scroll to the adjusted position
         window.scrollTo({
           top: elementPosition - offset,
-          behavior: 'smooth', // Smooth scrolling
+          behavior: 'smooth',
         });
       }
     }
@@ -120,8 +115,24 @@ The Company will retain Your Personal Data only for as long as is necessary for 
         <p>By phone number: 380.201.7145</p>
         <p>SMS consent and phone numbers provided for SMS purposes will not be shared with any third parties or affiliates for marketing purposes.</p>
     </div>
+
+    <div className='doc_con1'>
+    <h1>SMS For Consent Communication</h1>
+        <p>The information (+13802017145) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.</p>
+        <p>Types of SMS Communications</p>
+        <p>If you have consented to receive text messages from [CUBICDT LLC], you may receive text messages related to appointment reminders, meetings, and follow up on cases. </p>
+        <p>For Example: Hello Thank you for contacting (CUBICDT LLC), how can we help you? Reply Stop to opt-out at any time. Message and data rates may apply, for assistance, text Help" or visit our [http://cubicdtllc.com/documents#first] and [http://cubicdtllc.com/documents#first]</p>
+        <p>Please be advised this is just an example as you should adjust or accommodate this based on the type of messages your company would send to your customers. </p>
+        <p>Furthermore, it is important to cover the following throughout this SMS Terms And Conditions portion: </p>
+        <p>Message Frequency: Provide an estimated amount of SMS messages you would be sending daily across all users. </p>
+        <p>For example, Our SMS message frequency will be from 50 to 1000 text messages daily across all users. </p>
+        <p>Potential Fees for SMS Messaging: Many carriers charge a fee for each message sent or received. This can vary depending on the carrier's pricing structure and whether the message is sent domestically or internationally. Please give a brief explanation about potential fees for any received or sent text message your customer could get from their losing carrier, so they are aware of any potential fee for SMS messaging interaction with your company, any carrier may vary their fees for SMS messaging based on several factors such as, geographic location, and the type of SMS messaging being used (e.g., promotional, transactional, or one-time passwords)</p>
+        <p>Opt-In Method: Customers will Opt-In for SMS messaging from (CUBICDT LLC) through intakes forms on their website located at (http://cubicdtllc.com/), this agreement for SMS will not be shared with third parties for marketing purposes.</p>
+        <p>Opt-out: Customers will be able to Opt-out for SMS messaging from (CUBICDT LLC) by replying STOP at any time to any received SMS message, once opted-out they will receive no further SMS communication. They can Opt back In at any time by replying START</p>
+        <p>If your SMS Terms And Conditions will be within your privacy policy, please refer to it by adding the actual hyperlink that will take to your privacy policy for Customers to review it in detail, if your SMS Terms And Conditions will be built up in a stand-alone document please do the same, referring to the privacy policy will be highly recommended and will limit delays in the SMS approval process.</p>
+    </div>
     </>
   )
 }
 
-export default Documents
+export default Documents;
